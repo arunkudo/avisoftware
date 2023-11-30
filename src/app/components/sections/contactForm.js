@@ -1354,8 +1354,8 @@ export default function Contact() {
             <option disabled selected>
               Select Country
             </option>
-            {countryCode.map((c) => (
-              <option value={c.dial_code}>
+            {countryCode.map((c, idx) => (
+              <option key={idx} value={c.dial_code}>
                 {c.name} ({c.dial_code})
               </option>
             ))}
@@ -1384,8 +1384,10 @@ export default function Contact() {
           <option disabled selected>
             Select Requirement
           </option>
-          {businessRequirements.map((r) => (
-            <option value={r.value}>{r.label}</option>
+          {businessRequirements.map((r, idx) => (
+            <option key={idx} value={r.value}>
+              {r.label}
+            </option>
           ))}
         </select>
       </div>

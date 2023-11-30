@@ -29,6 +29,7 @@ export default function ({ Bio, SliderImg }) {
               <div className="carousel-inner">
                 {SliderImg.map((img, idx) => (
                   <div
+                    key={idx}
                     className={"carousel-item" + (idx == 0 ? " active" : "")}
                   >
                     <Image

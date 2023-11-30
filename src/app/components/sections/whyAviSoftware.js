@@ -45,8 +45,8 @@ export default function WhyAviSoftware() {
       <Heading heading={heading} />
       <div className="container">
         <div className="row">
-          {descObj.map((card) => (
-            <div className="col-4 pb-4">
+          {descObj.map((card, idx) => (
+            <div key={idx} className="col-4 pb-4">
               <Card {...card} />
             </div>
           ))}

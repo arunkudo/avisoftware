@@ -115,16 +115,16 @@ export default function ServicePage() {
       <Heading heading={heading1} />
       <SlickSlider />
       <div className="container mt-5">
-        <div className="row">
-          {desc.map((d) => (
-            <Capsules {...d} />
+        <div className="row ">
+          {desc.map((d, idx) => (
+            <Capsules key={idx} {...d} />
           ))}
         </div>
         <Heading heading={heading2} />
         <div className="container mt-5">
           <div className="row ">
-            {descObj.map((card) => (
-              <div className="col-4 pb-4">
+            {descObj.map((card, idx) => (
+              <div key={idx} className="col-4 pb-4">
                 <Card {...card} />
               </div>
             ))}

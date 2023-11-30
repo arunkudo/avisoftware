@@ -98,8 +98,8 @@ export default function SlickSlider() {
   return (
     <div>
       <Slider {...settings}>
-        {silderData.map((silder) => (
-          <SlickCards {...silder} />
+        {silderData.map((silder, idx) => (
+          <SlickCards key={idx} {...silder} />
         ))}
       </Slider>
     </div>
