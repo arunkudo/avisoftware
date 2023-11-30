@@ -21,15 +21,15 @@ const Bio = {
 };
 export default function HomePage() {
   const rowComponents = [
-    <GetStarted SliderImg={SliderImg} Bio={Bio} />,
-    <WhyAviSoftware />,
-    <OurPatnerAndContactForm />,
+    <GetStarted key="getStarted" SliderImg={SliderImg} Bio={Bio} />,
+    <WhyAviSoftware key="whyAviSoftware" />,
+    <OurPatnerAndContactForm key="ourPatnerAndContactForm" />,
   ];
 
   return (
     <main>
-      {rowComponents.map((comp, idx) => (
-        <div key={idx}>{comp}</div>
+      {rowComponents.map((comp) => (
+        <div key={comp.key}>{comp}</div>
       ))}
     </main>
   );

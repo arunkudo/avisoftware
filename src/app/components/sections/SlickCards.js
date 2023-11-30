@@ -1,5 +1,6 @@
 import Image from "next/image";
-export default function ({ img, caption }) {
+
+const MyComponent = ({ img, caption }) => {
   return (
     <div className="text-center d-flex flex-column align-items-center">
       <div className="text-center mb-3">
@@ -8,4 +9,8 @@ export default function ({ img, caption }) {
       <p className="text-center">{caption}</p>
     </div>
   );
-}
+};
+
+MyComponent.displayName = "MyComponent"; // Add this line with an appropriate name
+
+export default MyComponent;

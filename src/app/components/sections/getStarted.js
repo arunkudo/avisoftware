@@ -2,7 +2,7 @@
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import Image from "next/image";
 
-export default function ({ Bio, SliderImg }) {
+const GetStarted = ({ Bio, SliderImg }) => {
   return (
     <div className="getStartedBackgroud pt-5 ">
       <div className="container-fluid " style={{ marginLeft: "13em" }}>
@@ -48,4 +48,8 @@ export default function ({ Bio, SliderImg }) {
       </div>
     </div>
   );
-}
+};
+
+GetStarted.displayName = "GetStarted"; // Add this line with an appropriate name
+
+export default GetStarted;
