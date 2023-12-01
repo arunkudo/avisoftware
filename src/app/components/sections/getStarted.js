@@ -1,5 +1,8 @@
 "use client";
-import "bootstrap/dist/js/bootstrap.bundle.js";
+if (typeof window !== "undefined") {
+  import("bootstrap/dist/js/bootstrap.bundle.js");
+}
+
 import Image from "next/image";
 
 const GetStarted = ({ Bio, SliderImg }) => {

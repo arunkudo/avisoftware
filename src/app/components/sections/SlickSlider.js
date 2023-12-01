@@ -11,7 +11,6 @@ import staffAugment from "../../../../public/staff-augmentation.svg";
 import funcTesting from "../../../../public/functional-testing.svg";
 import contractHiring from "../../../../public/contract-hiring.svg";
 import autotest from "../../../../public/automation-testing.svg";
-import servivePage from "../../../../public/service-page.svg";
 import Slider from "react-slick";
 import SlickCards from "./SlickCards";
 const silderData = [
